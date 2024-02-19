@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type='text/javascript' src='jquery.js'>
+    </script>
+</head>
+<body>
+    <form>
+        MENSAJE: <input type="text" name="message" value="¡Escribe tu texto aquí!">
+        </form>
+        <button type="button">¡Agregar!</button><br/>
+        <div id="messages"></div>
+        <script>
+    $("button").on("click",function() {
+    var toAdd = $("input[name=message]").val();
+    $("#messages").html("<p>"+toAdd+"</p>");
+    });
+        </script>
+    
+</body>
+</html>

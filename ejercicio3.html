@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#mostrar").on( "click", function() {
+$('#target').show(); //muestro mediante id
+$('.target').show(); //muestro mediante clase
+});
+$("#ocultar").on( "click", function() {
+$('#target').hide("linear"); //oculto mediante id
+$('.target').hide("linear"); //oculto mediante clase
+});
+});
+</script>
+</head>
+<body>
+    y>
+<input type="button" id="mostrar" name="boton1" value="Click para mostrar
+elementos"/>
+<input type="button" id="ocultar" name="boton2" value="Click para ocultar
+elementos"><br/><br/>
+<input id="target" type="button" value="ESTE BOTÓN APARECE Y
+DESAPARECE"><br><br>
+<img width="250" src="neo.jpg" class="target"><br>
+</body>
+</html>
